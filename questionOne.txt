@@ -1,0 +1,263 @@
+Query:
+
+///
+
+ db.AccountHierarchy.aggregate([ { $lookup: { from: "Cost", localField: "parentRefNum", foreignField: "refNum", as: "ref_results" } } ]).pretty();
+
+
+///
+
+
+
+Results:
+
+
+
+
+
+
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de23269"),
+	"refNum" : "Jayanagar",
+	"name" : "Jayanagar",
+	"parentRefNum" : "Bangaluru",
+	"ref_results" : [
+		{
+			"_id" : ObjectId("61a4cf200e2bf9545de2327d"),
+			"cost" : 90000,
+			"refNum" : "Bangaluru",
+			"period" : "2021",
+			"costType" : "USD"
+		},
+		{
+			"_id" : ObjectId("61a4cf200e2bf9545de23280"),
+			"cost" : 100000,
+			"refNum" : "Bangaluru",
+			"period" : "2022",
+			"costType" : "USD"
+		}
+	]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de2326a"),
+	"refNum" : "JP Nagar",
+	"name" : "JP Nagar",
+	"parentRefNum" : "Bangaluru",
+	"ref_results" : [
+		{
+			"_id" : ObjectId("61a4cf200e2bf9545de2327d"),
+			"cost" : 90000,
+			"refNum" : "Bangaluru",
+			"period" : "2021",
+			"costType" : "USD"
+		},
+		{
+			"_id" : ObjectId("61a4cf200e2bf9545de23280"),
+			"cost" : 100000,
+			"refNum" : "Bangaluru",
+			"period" : "2022",
+			"costType" : "USD"
+		}
+	]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de2326b"),
+	"refNum" : "Koramangala",
+	"name" : "Koramangala",
+	"parentRefNum" : "Bangaluru",
+	"ref_results" : [
+		{
+			"_id" : ObjectId("61a4cf200e2bf9545de2327d"),
+			"cost" : 90000,
+			"refNum" : "Bangaluru",
+			"period" : "2021",
+			"costType" : "USD"
+		},
+		{
+			"_id" : ObjectId("61a4cf200e2bf9545de23280"),
+			"cost" : 100000,
+			"refNum" : "Bangaluru",
+			"period" : "2022",
+			"costType" : "USD"
+		}
+	]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de2326c"),
+	"refNum" : "Bangaluru",
+	"name" : "Bangaluru",
+	"parentRefNum" : "OfficeHQ",
+	"ref_results" : [ ]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de2326d"),
+	"refNum" : "Surat",
+	"name" : "Surat",
+	"parentRefNum" : "OfficeHQ",
+	"ref_results" : [ ]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de2326e"),
+	"refNum" : "A",
+	"name" : "A",
+	"parentRefNum" : "Suburbs",
+	"ref_results" : [ ]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de2326f"),
+	"refNum" : "B",
+	"name" : "B",
+	"parentRefNum" : "Suburbs",
+	"ref_results" : [ ]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de23270"),
+	"refNum" : "X",
+	"name" : "X",
+	"parentRefNum" : "Suburbs",
+	"ref_results" : [ ]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de23271"),
+	"refNum" : "Y",
+	"name" : "Y",
+	"parentRefNum" : "Suburbs",
+	"ref_results" : [ ]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de23272"),
+	"refNum" : "Adajan",
+	"name" : "Adajan",
+	"parentRefNum" : "Surat",
+	"ref_results" : [
+		{
+			"_id" : ObjectId("61a4cf200e2bf9545de2327e"),
+			"cost" : 70000,
+			"refNum" : "Surat",
+			"period" : "2021",
+			"costType" : "USD"
+		},
+		{
+			"_id" : ObjectId("61a4cf200e2bf9545de2327f"),
+			"cost" : 80000,
+			"refNum" : "Surat",
+			"period" : "2022",
+			"costType" : "USD"
+		}
+	]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de23273"),
+	"refNum" : "CityLight",
+	"name" : "CityLight",
+	"parentRefNum" : "Surat",
+	"ref_results" : [
+		{
+			"_id" : ObjectId("61a4cf200e2bf9545de2327e"),
+			"cost" : 70000,
+			"refNum" : "Surat",
+			"period" : "2021",
+			"costType" : "USD"
+		},
+		{
+			"_id" : ObjectId("61a4cf200e2bf9545de2327f"),
+			"cost" : 80000,
+			"refNum" : "Surat",
+			"period" : "2022",
+			"costType" : "USD"
+		}
+	]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de23274"),
+	"refNum" : "M",
+	"name" : "M",
+	"parentRefNum" : "MiniStore",
+	"ref_results" : [ ]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de23275"),
+	"refNum" : "N",
+	"name" : "N",
+	"parentRefNum" : "MiniStore",
+	"ref_results" : [ ]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de23276"),
+	"refNum" : "Rander",
+	"name" : "Rander",
+	"parentRefNum" : "Surat",
+	"ref_results" : [
+		{
+			"_id" : ObjectId("61a4cf200e2bf9545de2327e"),
+			"cost" : 70000,
+			"refNum" : "Surat",
+			"period" : "2021",
+			"costType" : "USD"
+		},
+		{
+			"_id" : ObjectId("61a4cf200e2bf9545de2327f"),
+			"cost" : 80000,
+			"refNum" : "Surat",
+			"period" : "2022",
+			"costType" : "USD"
+		}
+	]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de23277"),
+	"refNum" : "Chennai",
+	"name" : "Chennai",
+	"parentRefNum" : "OfficeHQ",
+	"ref_results" : [ ]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de23278"),
+	"refNum" : "Kochi",
+	"name" : "Kochi",
+	"parentRefNum" : "OfficeHQ",
+	"ref_results" : [ ]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de23279"),
+	"refNum" : "Munnar",
+	"name" : "Munnar",
+	"parentRefNum" : "OfficeHQ",
+	"ref_results" : [ ]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de2327a"),
+	"refNum" : "Mysuru",
+	"name" : "Mysuru",
+	"parentRefNum" : "OfficeHQ",
+	"ref_results" : [ ]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de2327b"),
+	"refNum" : "Vesu",
+	"name" : "Vesu",
+	"parentRefNum" : "Surat",
+	"ref_results" : [
+		{
+			"_id" : ObjectId("61a4cf200e2bf9545de2327e"),
+			"cost" : 70000,
+			"refNum" : "Surat",
+			"period" : "2021",
+			"costType" : "USD"
+		},
+		{
+			"_id" : ObjectId("61a4cf200e2bf9545de2327f"),
+			"cost" : 80000,
+			"refNum" : "Surat",
+			"period" : "2022",
+			"costType" : "USD"
+		}
+	]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de2327c"),
+	"refNum" : "GalaxyCircle",
+	"name" : "GalaxyCircle",
+	"parentRefNum" : "GreenCity",
+	"ref_results" : [ ]
+}

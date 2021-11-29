@@ -1,0 +1,237 @@
+ db.AccountHierarchy.insertMany([{
+...
+...   refNum: "Jayanagar",
+...   name: "Jayanagar",
+...   parentRefNum: "Bangaluru"
+... },{
+...
+...   refNum: "JP Nagar",
+...   name: "JP Nagar",
+...   parentRefNum: "Bangaluru"
+... },{
+...
+...   refNum: "Koramangala",
+...   name: "Koramangala",
+...   parentRefNum: "Bangaluru"
+... },{
+...   refNum: "Bangaluru",
+...   name: "Bangaluru",
+...   parentRefNum: "OfficeHQ"
+... },{
+...
+...   refNum: "Surat",
+...   name: "Surat",
+...   parentRefNum: "OfficeHQ"
+... },{
+...
+...   refNum: "A",
+...   name: "A",
+...   parentRefNum: "Suburbs"
+... },{
+...
+...   refNum: "B",
+...   name: "B",
+...   parentRefNum: "Suburbs"
+... },{
+...
+...   refNum: "X",
+...   name: "X",
+...   parentRefNum: "Suburbs"
+... },{
+...
+...  refNum: "Y",
+...   name: "Y",
+...   parentRefNum: "Suburbs"
+... },{
+...
+...   refNum: "Adajan",
+...   name: "Adajan",
+...   parentRefNum: "Surat"
+... },{
+...
+...   refNum: "CityLight",
+...   name: "CityLight",
+...   parentRefNum: "Surat"
+... },{
+...
+...   refNum: "M",
+...   name: "M",
+...   parentRefNum: "MiniStore"
+... },{
+...
+...   refNum: "N",
+...   name: "N",
+...   parentRefNum: "MiniStore"
+... },{
+...
+...   refNum: "Rander",
+...   name: "Rander",
+...   parentRefNum: "Surat"
+... },{
+...
+...   refNum: "Chennai",
+...   name: "Chennai",
+...   parentRefNum: "OfficeHQ"
+... },{
+...
+...   refNum: "Kochi",
+...   name: "Kochi",
+...   parentRefNum: "OfficeHQ"
+... },{
+...
+...   refNum: "Munnar",
+...   name: "Munnar",
+...   parentRefNum: "OfficeHQ"
+... },{
+...
+...   refNum: "Mysuru",
+...   name: "Mysuru",
+...   parentRefNum: "OfficeHQ"
+... },{
+...
+...   refNum: "Vesu",
+...   name: "Vesu",
+...   parentRefNum: "Surat"
+... },{
+...
+...   refNum: "GalaxyCircle",
+...   name: "GalaxyCircle",
+...   parentRefNum: "GreenCity"
+... }])
+
+
+
+
+////// Find Command   /////
+
+db.AccountHierarchy.find();
+
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de23269"), "refNum" : "Jayanagar", "name" : "Jayanagar", "parentRefNum" : "Bangaluru" }
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de2326a"), "refNum" : "JP Nagar", "name" : "JP Nagar", "parentRefNum" : "Bangaluru" }
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de2326b"), "refNum" : "Koramangala", "name" : "Koramangala", "parentRefNum" : "Bangaluru" }
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de2326c"), "refNum" : "Bangaluru", "name" : "Bangaluru", "parentRefNum" : "OfficeHQ" }
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de2326d"), "refNum" : "Surat", "name" : "Surat", "parentRefNum" : "OfficeHQ" }
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de2326e"), "refNum" : "A", "name" : "A", "parentRefNum" : "Suburbs" }
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de2326f"), "refNum" : "B", "name" : "B", "parentRefNum" : "Suburbs" }
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de23270"), "refNum" : "X", "name" : "X", "parentRefNum" : "Suburbs" }
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de23271"), "refNum" : "Y", "name" : "Y", "parentRefNum" : "Suburbs" }
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de23272"), "refNum" : "Adajan", "name" : "Adajan", "parentRefNum" : "Surat" }
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de23273"), "refNum" : "CityLight", "name" : "CityLight", "parentRefNum" : "Surat" }
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de23274"), "refNum" : "M", "name" : "M", "parentRefNum" : "MiniStore" }
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de23275"), "refNum" : "N", "name" : "N", "parentRefNum" : "MiniStore" }
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de23276"), "refNum" : "Rander", "name" : "Rander", "parentRefNum" : "Surat" }
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de23277"), "refNum" : "Chennai", "name" : "Chennai", "parentRefNum" : "OfficeHQ" }
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de23278"), "refNum" : "Kochi", "name" : "Kochi", "parentRefNum" : "OfficeHQ" }
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de23279"), "refNum" : "Munnar", "name" : "Munnar", "parentRefNum" : "OfficeHQ" }
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de2327a"), "refNum" : "Mysuru", "name" : "Mysuru", "parentRefNum" : "OfficeHQ" }
+{ "_id" : ObjectId("61a4ce2e0e2bf9545de2327b"), "refNum" : "Vesu", "name" : "Vesu", "parentRefNum" : "Surat" }
+
+
+
+
+
+
+
+
+/////  Inserting the Costs   //////
+
+
+
+
+ db.Cost.insertMany([{
+...
+...   "cost": 90000,
+...   "refNum": "Bangaluru",
+...   "period": "2021",
+...   "costType": "USD",
+...
+... },{
+...   "cost": 70000,
+...   "refNum": "Surat",
+...   "period": "2021",
+...   "costType": "USD",
+...
+... },{
+...
+...   "cost": 80000,
+...   "refNum": "Surat",
+...   "period": "2022",
+...   "costType": "USD",
+...
+... },{
+...
+...   "cost": 100000,
+...   "refNum": "Bangaluru",
+...   "period": "2022",
+...   "costType": "USD",
+...
+... },{
+...
+...   "cost": 786,
+...   "refNum": "Chennai",
+...   "period": "2021",
+...   "costType": "USD",
+...
+... },{
+...
+...   "cost": 404,
+...   "refNum": "Munnar",
+...   "period": "2021",
+...   "costType": "USD",
+...
+... },{
+...
+...   "cost": 101,
+...   "refNum": "Mysuru",
+...   "period": "2021",
+...   "costType": "USD",
+...
+... },{
+...
+...   "cost": 35,
+...   "refNum": "Kochi",
+...   "period": "2021",
+...   "costType": "USD",
+...
+... },{
+...
+...   "cost": 7500,
+...   "refNum": "GalaxyCircle",
+...   "period": "2021",
+...   "costType": "USD",
+...
+... }]
+... )
+{
+	"acknowledged" : true,
+	"insertedIds" : [
+		ObjectId("61a4cf200e2bf9545de2327d"),
+		ObjectId("61a4cf200e2bf9545de2327e"),
+		ObjectId("61a4cf200e2bf9545de2327f"),
+		ObjectId("61a4cf200e2bf9545de23280"),
+		ObjectId("61a4cf200e2bf9545de23281"),
+		ObjectId("61a4cf200e2bf9545de23282"),
+		ObjectId("61a4cf200e2bf9545de23283"),
+		ObjectId("61a4cf200e2bf9545de23284"),
+		ObjectId("61a4cf200e2bf9545de23285")
+	]
+}
+
+
+
+///// Find the Costs  ///
+
+
+
+
+> db.Cost.find();
+{ "_id" : ObjectId("61a4cf200e2bf9545de2327d"), "cost" : 90000, "refNum" : "Bangaluru", "period" : "2021", "costType" : "USD" }
+{ "_id" : ObjectId("61a4cf200e2bf9545de2327e"), "cost" : 70000, "refNum" : "Surat", "period" : "2021", "costType" : "USD" }
+{ "_id" : ObjectId("61a4cf200e2bf9545de2327f"), "cost" : 80000, "refNum" : "Surat", "period" : "2022", "costType" : "USD" }
+{ "_id" : ObjectId("61a4cf200e2bf9545de23280"), "cost" : 100000, "refNum" : "Bangaluru", "period" : "2022", "costType" : "USD" }
+{ "_id" : ObjectId("61a4cf200e2bf9545de23281"), "cost" : 786, "refNum" : "Chennai", "period" : "2021", "costType" : "USD" }
+{ "_id" : ObjectId("61a4cf200e2bf9545de23282"), "cost" : 404, "refNum" : "Munnar", "period" : "2021", "costType" : "USD" }
+{ "_id" : ObjectId("61a4cf200e2bf9545de23283"), "cost" : 101, "refNum" : "Mysuru", "period" : "2021", "costType" : "USD" }
+{ "_id" : ObjectId("61a4cf200e2bf9545de23284"), "cost" : 35, "refNum" : "Kochi", "period" : "2021", "costType" : "USD" }
+{ "_id" : ObjectId("61a4cf200e2bf9545de23285"), "cost" : 7500, "refNum" : "GalaxyCircle", "period" : "2021", "costType" : "USD" }
+> {

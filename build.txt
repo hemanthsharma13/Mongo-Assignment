@@ -1,0 +1,31 @@
+// Beliving that docker is already installed
+
+
+
+
+Step One :   sudo docker pull mongo
+
+
+Step Two :  sudo mkdir -p /mongodata
+
+
+Step Three :  sudo docker run -it -v mongodata:/data/db --name mongodb -d mongo
+
+
+
+Step Four  :   sudo docker exec -it mongodb bash
+
+root@7908c734ec91:/# mongo
+
+
+use dbTest;
+
+
+db.createCollection('AccountHierarchy');
+//{ "ok" : 1 }
+
+db.createCollection('Cost');
+//{ "ok" : 1 }
+
+
+

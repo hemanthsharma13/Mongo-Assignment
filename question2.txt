@@ -1,0 +1,53 @@
+Filtering the aggregate query using PIPELINES:
+
+
+
+///
+
+Query:
+
+db.AccountHierarchy.aggregate([ { $lookup: { from: "Cost", localField: "parentRefNum", foreignField: "refNum", pipeline: [ { $match: { "period": "2021"}}],  as: "ref_results" } } ]).pretty();
+
+
+///
+
+
+Results:
+
+
+
+
+
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de23269"),
+	"refNum" : "Jayanagar",
+	"name" : "Jayanagar",
+	"parentRefNum" : "Bangaluru",
+	"ref_results" : [
+		{
+			"_id" : ObjectId("61a4cf200e2bf9545de2327d"),
+			"cost" : 90000,
+			"refNum" : "Bangaluru",
+			"period" : "2021",
+			"costType" : "USD"
+		}
+	]
+}
+{
+	"_id" : ObjectId("61a4ce2e0e2bf9545de2326a"),
+	"refNum" : "JP Nagar",
+	"name" : "JP Nagar",
+	"parentRefNum" : "Bangaluru",
+	"ref_results" : [
+		{
+			"_id" : ObjectId("61a4cf200e2bf9545de2327d"),
+			"cost" : 90000,
+			"refNum" : "Bangaluru",
+			"period" : "2021",
+			"costType" : "USD"
+		}
+	]
+}
+
+
+

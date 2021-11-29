@@ -1,0 +1,72 @@
+Average of Costs in the Cost Collections:
+
+
+
+///
+
+Average Query and Results
+
+//
+
+
+> db.Cost.aggregate(
+... [
+...  {
+... $group:
+... {
+... "_id" : "_id",
+... AverageCosts: { $avg: "$cost"}
+... }
+... }
+... ]
+... );
+
+
+
+{ "_id" : "_id", "AverageCosts" : 38758.444444444445 }
+>
+
+
+
+
+
+///
+
+Sum  Query and Results
+
+///
+
+
+> db.Cost.aggregate( [  { $group: { "_id" : "_id", SumCosts: { $sum: "$cost"} } } ] );
+
+
+{ "_id" : "_id", "SumCosts" : 348826 }
+>
+
+
+
+///
+Max Costs
+///
+
+
+
+> db.Cost.aggregate( [  { $group: { "_id" : "_id", maxCosts: { $max: "$cost"} } } ] );
+
+
+
+{ "_id" : "_id", "maxCosts" : 100000 }
+
+
+///
+
+Min Costs
+
+///\
+
+> db.Cost.aggregate( [  { $group: { "_id" : "_id", minCosts: { $min: "$cost"} } } ] );
+
+
+
+{ "_id" : "_id", "minCosts" : 35 }
+>

@@ -1,0 +1,48 @@
+/* Quite Confused if to implement the filter in the existing query or new query ,
+// so done a seperate query to make the filer
+*/
+
+
+> db.Cost.find({"period": "2021"}).pretty();
+
+
+
+Results:
+
+
+
+{
+	"_id" : ObjectId("61a4cf200e2bf9545de2327d"),
+	"cost" : 90000,
+	"refNum" : "Bangaluru",
+	"period" : "2021",
+	"costType" : "USD"
+}
+{
+	"_id" : ObjectId("61a4cf200e2bf9545de2327e"),
+	"cost" : 70000,
+	"refNum" : "Surat",
+	"period" : "2021",
+	"costType" : "USD"
+}
+{
+	"_id" : ObjectId("61a4cf200e2bf9545de23281"),
+	"cost" : 786,
+	"refNum" : "Chennai",
+	"period" : "2021",
+	"costType" : "USD"
+}
+{
+	"_id" : ObjectId("61a4cf200e2bf9545de23282"),
+	"cost" : 404,
+	"refNum" : "Munnar",
+	"period" : "2021",
+	"costType" : "USD"
+}
+{
+	"_id" : ObjectId("61a4cf200e2bf9545de23283"),
+	"cost" : 101,
+	"refNum" : "Mysuru",
+	"period" : "2021",
+	"costType" : "USD"
+}
